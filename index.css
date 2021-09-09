@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.task-head{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    margin-top: 80px;
+    /* display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;  */
+
+}
+.title h1{
+    font-size:4rem;
+    font-weight: 700;
+    color: #3f3d3d; 
+    /* margin-right:10px;  */
+}
+span {
+    font-weight: 200;
+    color: rgb(134, 132, 132);   
+}
+.add-list{
+    margin-top: 60px;
+}
+.add-list h2{
+    font-size: 2rem;
+    color: rgb(134, 132, 132);
+    font-weight: 400;
+    margin-right: 20px;
+    display: inline;
+}
+.add-list .fa-plus-circle{
+    color:#fa4500;
+    /* color: #e36161; */
+    margin-right: 10px;
+    font-size: 45px;
+    display: inline;
+}
+.cards{
+    width: 60vw;
+    margin: auto;
+    /* display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-content: flex-end; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    border: 2px solid rgb(233, 120, 120);
+    border-radius: 10px;
+    padding: 20px;
+    height: 320px;
+    box-shadow:10px 10px 10px  lightgray;
+    margin-right: 0px;  
+}
+
+.card-head h2{
+    margin: 0px;
+    color: rgb(233, 120, 120);
+    font-size: 30px;
+    font-weight: 400;
+}
+.card-head {
+    margin-left: 20px;
+}
+
+hr{
+    color: lightslategray;
+    width: 101%;
+    margin-bottom: 30px;
+}
+p{
+    font-size: 1.5rem ;
+    font-weight: 600;
+    color: rgb(238, 53, 53);
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.mobile-view{
+    visibility: hidden;
+    margin: auto;
+    width: 90%;
+}
+.list-type{
+    border: 1px solid rgb(245 180 180);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px 5px;
+    color: darkgrey;
+    font-size: 21px;
+}
+
+/* media query */
+
+
+@media (min-width:320px) and (max-width:480px){
+    .task-head{
+        width: 90vw;
+        margin-top: 35px;
+    }
+    .add-list h2{
+        display: none;
+    }
+    .add-list {
+        margin-top: 35px;
+    }
+    .cards{
+        display: none;
+    }
+   fa-plus-circle{
+        /* display: inline-block; */
+        color: pink;
+    }
+    .title h1{
+        font-size:2.5rem; 
+    }
+
+    .mobile-view{
+        visibility: visible;
+    }
+
+}
